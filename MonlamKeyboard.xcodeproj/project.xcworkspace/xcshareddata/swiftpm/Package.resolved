@@ -1,0 +1,24 @@
+{
+  "originHash" : "6e06313ef362ace25ff7d66fe7023d035be6e44aeabaaf3b4a225051977cf5a2",
+  "pins" : [
+    {
+      "identity" : "keyboardkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gdetari/KeyboardKit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3a1833f392c961b36bad46cc151841b66d71fbec"
+      }
+    },
+    {
+      "identity" : "symspellswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gdetari/SymSpellSwift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "28cd70549f16beeedb3ac62a132f9b766a4a2499"
+      }
+    }
+  ],
+  "version" : 3
+}

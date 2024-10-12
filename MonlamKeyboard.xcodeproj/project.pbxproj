@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF8FF7252C903A7F0023BACA /* MonlamKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FF7242C903A7F0023BACA /* MonlamKeyboardApp.swift */; };
+		AF8FF7272C903A7F0023BACA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FF7262C903A7F0023BACA /* ContentView.swift */; };
+		AF8FF7292C903A810023BACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8FF7282C903A810023BACA /* Assets.xcassets */; };
+		AF8FF72C2C903A810023BACA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8FF72B2C903A810023BACA /* Preview Assets.xcassets */; };
+		AF8FF7392C903ACA0023BACA /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FF7382C903ACA0023BACA /* KeyboardViewController.swift */; };
+		AF8FF73D2C903ACA0023BACA /* TibetanKB.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AF8FF7362C903ACA0023BACA /* TibetanKB.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AF8FF7532C930C630023BACA /* NotoSerifTibetan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF8FF7522C930C630023BACA /* NotoSerifTibetan.ttf */; };
+		AF937C9F2C9DA79E00152DF9 /* TibetanKeyboardStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF937C9E2C9DA79E00152DF9 /* TibetanKeyboardStyleProvider.swift */; };
+		AF937CA12C9DA7C100152DF9 /* TibetanCustomCalloutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF937CA02C9DA7C100152DF9 /* TibetanCustomCalloutService.swift */; };
+		AF937CA32C9DA7DA00152DF9 /* TibetanKeyboardLayoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF937CA22C9DA7DA00152DF9 /* TibetanKeyboardLayoutService.swift */; };
+		AF937CA52C9DA81E00152DF9 /* TibetanAutocompleteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF937CA42C9DA81E00152DF9 /* TibetanAutocompleteService.swift */; };
+		AF937CFB2CA2710500152DF9 /* tc.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF937CFA2CA2710500152DF9 /* tc.txt */; };
+		AF937CFD2CA2945400152DF9 /* gmd.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF937CFC2CA2945400152DF9 /* gmd.txt */; };
+		AF937D0A2CA7F66C00152DF9 /* SymSpellSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF937D092CA7F66C00152DF9 /* SymSpellSwift */; };
+		AFD6812B2CB7A5FD00E65AD2 /* TibetanCustomActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6812A2CB7A5FD00E65AD2 /* TibetanCustomActionHandler.swift */; };
+		AFD6812D2CB7BC2800E65AD2 /* TIbetanKeyboardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6812C2CB7BC2800E65AD2 /* TIbetanKeyboardBehavior.swift */; };
+		AFD6812F2CB7F60B00E65AD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD6812E2CB7F60B00E65AD2 /* Assets.xcassets */; };
+		AFDC90CB2CBA693D009A6614 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = AFDC90CA2CBA693D009A6614 /* KeyboardKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF8FF73B2C903ACA0023BACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF8FF7192C903A7F0023BACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF8FF7352C903ACA0023BACA;
+			remoteInfo = TibetianKB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF8FF7412C903ACA0023BACA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AF8FF73D2C903ACA0023BACA /* TibetanKB.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AF8FF7212C903A7F0023BACA /* MonlamKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonlamKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8FF7242C903A7F0023BACA /* MonlamKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonlamKeyboardApp.swift; sourceTree = "<group>"; };
+		AF8FF7262C903A7F0023BACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF8FF7282C903A810023BACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF8FF72B2C903A810023BACA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF8FF7362C903ACA0023BACA /* TibetanKB.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TibetanKB.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8FF7382C903ACA0023BACA /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		AF8FF73A2C903ACA0023BACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8FF7522C930C630023BACA /* NotoSerifTibetan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NotoSerifTibetan.ttf; sourceTree = "<group>"; };
+		AF937C9E2C9DA79E00152DF9 /* TibetanKeyboardStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibetanKeyboardStyleProvider.swift; sourceTree = "<group>"; };
+		AF937CA02C9DA7C100152DF9 /* TibetanCustomCalloutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibetanCustomCalloutService.swift; sourceTree = "<group>"; };
+		AF937CA22C9DA7DA00152DF9 /* TibetanKeyboardLayoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibetanKeyboardLayoutService.swift; sourceTree = "<group>"; };
+		AF937CA42C9DA81E00152DF9 /* TibetanAutocompleteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibetanAutocompleteService.swift; sourceTree = "<group>"; };
+		AF937CFA2CA2710500152DF9 /* tc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tc.txt; sourceTree = "<group>"; };
+		AF937CFC2CA2945400152DF9 /* gmd.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gmd.txt; sourceTree = "<group>"; };
+		AFD6812A2CB7A5FD00E65AD2 /* TibetanCustomActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibetanCustomActionHandler.swift; sourceTree = "<group>"; };
+		AFD6812C2CB7BC2800E65AD2 /* TIbetanKeyboardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIbetanKeyboardBehavior.swift; sourceTree = "<group>"; };
+		AFD6812E2CB7F60B00E65AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF8FF71E2C903A7F0023BACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8FF7332C903ACA0023BACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDC90CB2CBA693D009A6614 /* KeyboardKit in Frameworks */,
+				AF937D0A2CA7F66C00152DF9 /* SymSpellSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF8FF7182C903A7F0023BACA = {
+			isa = PBXGroup;
+			children = (
+				AF8FF7232C903A7F0023BACA /* MonlamKeyboard */,
+				AF8FF7372C903ACA0023BACA /* TibetanKB */,
+				AF8FF7222C903A7F0023BACA /* Products */,
+				AF8FF7552C9423620023BACA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF8FF7222C903A7F0023BACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF8FF7212C903A7F0023BACA /* MonlamKeyboard.app */,
+				AF8FF7362C903ACA0023BACA /* TibetanKB.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF8FF7232C903A7F0023BACA /* MonlamKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AF8FF7242C903A7F0023BACA /* MonlamKeyboardApp.swift */,
+				AF8FF7262C903A7F0023BACA /* ContentView.swift */,
+				AF8FF7282C903A810023BACA /* Assets.xcassets */,
+				AF8FF72A2C903A810023BACA /* Preview Content */,
+			);
+			path = MonlamKeyboard;
+			sourceTree = "<group>";
+		};
+		AF8FF72A2C903A810023BACA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF8FF72B2C903A810023BACA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF8FF7372C903ACA0023BACA /* TibetanKB */ = {
+			isa = PBXGroup;
+			children = (
+				AF937CFA2CA2710500152DF9 /* tc.txt */,
+				AF937CFC2CA2945400152DF9 /* gmd.txt */,
+				AF8FF7382C903ACA0023BACA /* KeyboardViewController.swift */,
+				AF8FF73A2C903ACA0023BACA /* Info.plist */,
+				AF8FF7522C930C630023BACA /* NotoSerifTibetan.ttf */,
+				AF937C9E2C9DA79E00152DF9 /* TibetanKeyboardStyleProvider.swift */,
+				AF937CA02C9DA7C100152DF9 /* TibetanCustomCalloutService.swift */,
+				AF937CA22C9DA7DA00152DF9 /* TibetanKeyboardLayoutService.swift */,
+				AF937CA42C9DA81E00152DF9 /* TibetanAutocompleteService.swift */,
+				AFD6812A2CB7A5FD00E65AD2 /* TibetanCustomActionHandler.swift */,
+				AFD6812C2CB7BC2800E65AD2 /* TIbetanKeyboardBehavior.swift */,
+				AFD6812E2CB7F60B00E65AD2 /* Assets.xcassets */,
+			);
+			path = TibetanKB;
+			sourceTree = "<group>";
+		};
+		AF8FF7552C9423620023BACA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF8FF7202C903A7F0023BACA /* MonlamKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF8FF72F2C903A810023BACA /* Build configuration list for PBXNativeTarget "MonlamKeyboard" */;
+			buildPhases = (
+				AF8FF71D2C903A7F0023BACA /* Sources */,
+				AF8FF71E2C903A7F0023BACA /* Frameworks */,
+				AF8FF71F2C903A7F0023BACA /* Resources */,
+				AF8FF7412C903ACA0023BACA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF8FF73C2C903ACA0023BACA /* PBXTargetDependency */,
+			);
+			name = MonlamKeyboard;
+			productName = MonlamKeyboard;
+			productReference = AF8FF7212C903A7F0023BACA /* MonlamKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF8FF7352C903ACA0023BACA /* TibetanKB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF8FF73E2C903ACA0023BACA /* Build configuration list for PBXNativeTarget "TibetanKB" */;
+			buildPhases = (
+				AF8FF7322C903ACA0023BACA /* Sources */,
+				AF8FF7332C903ACA0023BACA /* Frameworks */,
+				AF8FF7342C903ACA0023BACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TibetanKB;
+			packageProductDependencies = (
+				AF937D092CA7F66C00152DF9 /* SymSpellSwift */,
+				AFDC90CA2CBA693D009A6614 /* KeyboardKit */,
+			);
+			productName = TibetianKB;
+			productReference = AF8FF7362C903ACA0023BACA /* TibetanKB.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF8FF7192C903A7F0023BACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AF8FF7202C903A7F0023BACA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AF8FF7352C903ACA0023BACA = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+				};
+			};
+			buildConfigurationList = AF8FF71C2C903A7F0023BACA /* Build configuration list for PBXProject "MonlamKeyboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF8FF7182C903A7F0023BACA;
+			packageReferences = (
+				AF937D082CA7F66C00152DF9 /* XCRemoteSwiftPackageReference "SymSpellSwift" */,
+				AFDC90C92CBA691D009A6614 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
+			productRefGroup = AF8FF7222C903A7F0023BACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF8FF7202C903A7F0023BACA /* MonlamKeyboard */,
+				AF8FF7352C903ACA0023BACA /* TibetanKB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF8FF71F2C903A7F0023BACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8FF72C2C903A810023BACA /* Preview Assets.xcassets in Resources */,
+				AF8FF7292C903A810023BACA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8FF7342C903ACA0023BACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8FF7532C930C630023BACA /* NotoSerifTibetan.ttf in Resources */,
+				AF937CFD2CA2945400152DF9 /* gmd.txt in Resources */,
+				AFD6812F2CB7F60B00E65AD2 /* Assets.xcassets in Resources */,
+				AF937CFB2CA2710500152DF9 /* tc.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF8FF71D2C903A7F0023BACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8FF7272C903A7F0023BACA /* ContentView.swift in Sources */,
+				AF8FF7252C903A7F0023BACA /* MonlamKeyboardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8FF7322C903ACA0023BACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD6812D2CB7BC2800E65AD2 /* TIbetanKeyboardBehavior.swift in Sources */,
+				AFD6812B2CB7A5FD00E65AD2 /* TibetanCustomActionHandler.swift in Sources */,
+				AF937CA12C9DA7C100152DF9 /* TibetanCustomCalloutService.swift in Sources */,
+				AF8FF7392C903ACA0023BACA /* KeyboardViewController.swift in Sources */,
+				AF937C9F2C9DA79E00152DF9 /* TibetanKeyboardStyleProvider.swift in Sources */,
+				AF937CA32C9DA7DA00152DF9 /* TibetanKeyboardLayoutService.swift in Sources */,
+				AF937CA52C9DA81E00152DF9 /* TibetanAutocompleteService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF8FF73C2C903ACA0023BACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF8FF7352C903ACA0023BACA /* TibetanKB */;
+			targetProxy = AF8FF73B2C903ACA0023BACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AF8FF72D2C903A810023BACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF8FF72E2C903A810023BACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF8FF7302C903A810023BACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MonlamKeyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V9K46ZMDV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yomba.MonlamKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF8FF7312C903A810023BACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MonlamKeyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V9K46ZMDV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yomba.MonlamKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF8FF73F2C903ACA0023BACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V9K46ZMDV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TibetanKB/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TibetanKB;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yomba.MonlamKeyboard.TibetanKB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF8FF7402C903ACA0023BACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V9K46ZMDV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TibetanKB/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TibetanKB;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yomba.MonlamKeyboard.TibetanKB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF8FF71C2C903A7F0023BACA /* Build configuration list for PBXProject "MonlamKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8FF72D2C903A810023BACA /* Debug */,
+				AF8FF72E2C903A810023BACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF8FF72F2C903A810023BACA /* Build configuration list for PBXNativeTarget "MonlamKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8FF7302C903A810023BACA /* Debug */,
+				AF8FF7312C903A810023BACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF8FF73E2C903ACA0023BACA /* Build configuration list for PBXNativeTarget "TibetanKB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8FF73F2C903ACA0023BACA /* Debug */,
+				AF8FF7402C903ACA0023BACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF937D082CA7F66C00152DF9 /* XCRemoteSwiftPackageReference "SymSpellSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gdetari/SymSpellSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		AFDC90C92CBA691D009A6614 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gdetari/KeyboardKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF937D092CA7F66C00152DF9 /* SymSpellSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF937D082CA7F66C00152DF9 /* XCRemoteSwiftPackageReference "SymSpellSwift" */;
+			productName = SymSpellSwift;
+		};
+		AFDC90CA2CBA693D009A6614 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFDC90C92CBA691D009A6614 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AF8FF7192C903A7F0023BACA /* Project object */;
+}
