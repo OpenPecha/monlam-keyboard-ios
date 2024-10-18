@@ -37,9 +37,9 @@ class TibetanKeyboardStyleProvider: KeyboardStyle.StandardProvider {
     override func buttonText(for action: KeyboardAction) -> String? {
         switch action {
         case .space:
-            "འགྲིག་"
+            "འགྲིག"
         case .primary(.return):
-            "འཔྲེང་འོག་"
+            "འཕྲེང་འོག"
         case let .keyboardType(type):
             switch type {
             case .numeric:
