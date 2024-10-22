@@ -23,6 +23,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>NotoSerifTibetan.ttf</string>
+		<string>MonlamTBslim.ttf</string>
 	</array>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>

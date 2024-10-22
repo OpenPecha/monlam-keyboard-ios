@@ -22,7 +22,7 @@ class KeyboardViewController: KeyboardInputViewController {
         state.feedbackContext.audioConfiguration = .enabled
         state.keyboardContext.isAutocapitalizationEnabled = false
     }
-
+    
     override func viewWillSetupKeyboard() {
         super.viewWillSetupKeyboard()
 

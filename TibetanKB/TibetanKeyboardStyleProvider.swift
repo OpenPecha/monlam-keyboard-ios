@@ -8,14 +8,14 @@ import KeyboardKit
 import SwiftUI
 
 class TibetanKeyboardStyleProvider: KeyboardStyle.StandardProvider {
-    private let fontName = "Noto Serif Tibetan"
+    private let fontName = "MonlamTBslim" //"MonlamBodyig-Regular" //"Noto Serif Tibetan"
 
     override func buttonKeyboardFont(for action: KeyboardAction) -> KeyboardFont {
         switch action {
         case .space, .primary(.return), .keyboardType(.numeric):
             KeyboardFont(.custom(fontName, size: 14))
         case .character:
-            KeyboardFont(.custom(fontName, size: 20))
+            KeyboardFont(.custom(fontName, size: 18))
         default: super.buttonKeyboardFont(for: action)
         }
     }
@@ -23,13 +23,13 @@ class TibetanKeyboardStyleProvider: KeyboardStyle.StandardProvider {
     override func buttonContentInsets(for action: KeyboardAction) -> EdgeInsets {
         switch action {
         case .space:
-            EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0)
+            EdgeInsets(top: 4, leading: 0, bottom: 0, trailing: 0)
         case .primary(.return):
-            EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0)
+            EdgeInsets(top: 4, leading: 0, bottom: 0, trailing: 0)
         case .keyboardType(.numeric):
-            EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0)
+            EdgeInsets(top: 4, leading: 0, bottom: 0, trailing: 0)
         case .character:
-            EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0)
+            EdgeInsets(top: 2, leading: 0, bottom: 0, trailing: 0)
         default: super.buttonContentInsets(for: action)
         }
     }
@@ -70,6 +70,6 @@ class TibetanKeyboardStyleProvider: KeyboardStyle.StandardProvider {
     }
 
     override var actionCalloutStyle: Callouts.ActionCalloutStyle {
-        .init(font: KeyboardFont(.custom(fontName, size: 20)), maxButtonSize: .init(width: 50, height: 50))
+        .init(font: KeyboardFont(.custom(fontName, size: 18)), maxButtonSize: .init(width: 50, height: 50))
     }
 }

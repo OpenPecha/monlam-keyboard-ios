@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF6B5DD62CC3D77B005FD889 /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF6B5DD52CC3D77B005FD889 /* dictionary.txt */; };
+		AF6B5DDC2CC750E2005FD889 /* MonlamTBslim.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF6B5DDB2CC750E2005FD889 /* MonlamTBslim.ttf */; };
 		AF8FF7252C903A7F0023BACA /* MonlamKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FF7242C903A7F0023BACA /* MonlamKeyboardApp.swift */; };
 		AF8FF7272C903A7F0023BACA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FF7262C903A7F0023BACA /* ContentView.swift */; };
 		AF8FF7292C903A810023BACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8FF7282C903A810023BACA /* Assets.xcassets */; };
@@ -18,8 +20,6 @@
 		AF937CA12C9DA7C100152DF9 /* TibetanCustomCalloutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF937CA02C9DA7C100152DF9 /* TibetanCustomCalloutService.swift */; };
 		AF937CA32C9DA7DA00152DF9 /* TibetanKeyboardLayoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF937CA22C9DA7DA00152DF9 /* TibetanKeyboardLayoutService.swift */; };
 		AF937CA52C9DA81E00152DF9 /* TibetanAutocompleteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF937CA42C9DA81E00152DF9 /* TibetanAutocompleteService.swift */; };
-		AF937CFB2CA2710500152DF9 /* tc.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF937CFA2CA2710500152DF9 /* tc.txt */; };
-		AF937CFD2CA2945400152DF9 /* gmd.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF937CFC2CA2945400152DF9 /* gmd.txt */; };
 		AF937D0A2CA7F66C00152DF9 /* SymSpellSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF937D092CA7F66C00152DF9 /* SymSpellSwift */; };
 		AFD6812B2CB7A5FD00E65AD2 /* TibetanCustomActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6812A2CB7A5FD00E65AD2 /* TibetanCustomActionHandler.swift */; };
 		AFD6812D2CB7BC2800E65AD2 /* TIbetanKeyboardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6812C2CB7BC2800E65AD2 /* TIbetanKeyboardBehavior.swift */; };
@@ -52,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF6B5DD52CC3D77B005FD889 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
+		AF6B5DDB2CC750E2005FD889 /* MonlamTBslim.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonlamTBslim.ttf; sourceTree = "<group>"; };
 		AF8FF7212C903A7F0023BACA /* MonlamKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonlamKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8FF7242C903A7F0023BACA /* MonlamKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonlamKeyboardApp.swift; sourceTree = "<group>"; };
 		AF8FF7262C903A7F0023BACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 		AF937CA02C9DA7C100152DF9 /* TibetanCustomCalloutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibetanCustomCalloutService.swift; sourceTree = "<group>"; };
 		AF937CA22C9DA7DA00152DF9 /* TibetanKeyboardLayoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibetanKeyboardLayoutService.swift; sourceTree = "<group>"; };
 		AF937CA42C9DA81E00152DF9 /* TibetanAutocompleteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibetanAutocompleteService.swift; sourceTree = "<group>"; };
-		AF937CFA2CA2710500152DF9 /* tc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tc.txt; sourceTree = "<group>"; };
-		AF937CFC2CA2945400152DF9 /* gmd.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gmd.txt; sourceTree = "<group>"; };
 		AFD6812A2CB7A5FD00E65AD2 /* TibetanCustomActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibetanCustomActionHandler.swift; sourceTree = "<group>"; };
 		AFD6812C2CB7BC2800E65AD2 /* TIbetanKeyboardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIbetanKeyboardBehavior.swift; sourceTree = "<group>"; };
 		AFD6812E2CB7F60B00E65AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,10 +133,10 @@
 		AF8FF7372C903ACA0023BACA /* TibetanKB */ = {
 			isa = PBXGroup;
 			children = (
-				AF937CFA2CA2710500152DF9 /* tc.txt */,
-				AF937CFC2CA2945400152DF9 /* gmd.txt */,
+				AF6B5DD52CC3D77B005FD889 /* dictionary.txt */,
 				AF8FF7382C903ACA0023BACA /* KeyboardViewController.swift */,
 				AF8FF73A2C903ACA0023BACA /* Info.plist */,
+				AF6B5DDB2CC750E2005FD889 /* MonlamTBslim.ttf */,
 				AF8FF7522C930C630023BACA /* NotoSerifTibetan.ttf */,
 				AF937C9E2C9DA79E00152DF9 /* TibetanKeyboardStyleProvider.swift */,
 				AF937CA02C9DA7C100152DF9 /* TibetanCustomCalloutService.swift */,
@@ -255,10 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6B5DDC2CC750E2005FD889 /* MonlamTBslim.ttf in Resources */,
+				AF6B5DD62CC3D77B005FD889 /* dictionary.txt in Resources */,
 				AF8FF7532C930C630023BACA /* NotoSerifTibetan.ttf in Resources */,
-				AF937CFD2CA2945400152DF9 /* gmd.txt in Resources */,
 				AFD6812F2CB7F60B00E65AD2 /* Assets.xcassets in Resources */,
-				AF937CFB2CA2710500152DF9 /* tc.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

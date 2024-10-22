@@ -13,7 +13,7 @@ class TibetanAutocompleteService: AutocompleteService {
         self.context = context
         symSpell = SymSpell(maxDictionaryEditDistance: 2)
         DispatchQueue.global(qos: .userInitiated).async {
-            if let url = Bundle.main.url(forResource: "gmd", withExtension: "txt") {
+            if let url = Bundle.main.url(forResource: "dictionary", withExtension: "txt") {
                 try? self.symSpell.loadDictionary(from: url, termCount: 27000)
                 self.initialized = true
             }
