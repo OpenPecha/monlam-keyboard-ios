@@ -1,5 +1,5 @@
 {
-  "originHash" : "6e06313ef362ace25ff7d66fe7023d035be6e44aeabaaf3b4a225051977cf5a2",
+  "originHash" : "3674923353722c0f70b093b64789cd36cb3dd5fbadd728439f2a8abbec70a157",
   "pins" : [
     {
       "identity" : "keyboardkit",
@@ -16,7 +16,7 @@
       "location" : "https://github.com/gdetari/SymSpellSwift",
       "state" : {
         "branch" : "main",
-        "revision" : "28cd70549f16beeedb3ac62a132f9b766a4a2499"
+        "revision" : "3d7fbb93153dd53439cd5eb38281c7ee22da900b"
       }
     }
   ],

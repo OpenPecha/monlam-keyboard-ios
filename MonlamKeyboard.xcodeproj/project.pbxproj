@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AF6B5DD62CC3D77B005FD889 /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF6B5DD52CC3D77B005FD889 /* dictionary.txt */; };
 		AF6B5DDC2CC750E2005FD889 /* MonlamTBslim.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF6B5DDB2CC750E2005FD889 /* MonlamTBslim.ttf */; };
+		AF6B5DE12CC9039F005FD889 /* MonlamTBslim.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF6B5DDB2CC750E2005FD889 /* MonlamTBslim.ttf */; };
 		AF8FF7252C903A7F0023BACA /* MonlamKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FF7242C903A7F0023BACA /* MonlamKeyboardApp.swift */; };
 		AF8FF7272C903A7F0023BACA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FF7262C903A7F0023BACA /* ContentView.swift */; };
 		AF8FF7292C903A810023BACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8FF7282C903A810023BACA /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		AF6B5DD52CC3D77B005FD889 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 		AF6B5DDB2CC750E2005FD889 /* MonlamTBslim.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonlamTBslim.ttf; sourceTree = "<group>"; };
+		AF6B5DE02CC8D045005FD889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AF8FF7212C903A7F0023BACA /* MonlamKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonlamKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8FF7242C903A7F0023BACA /* MonlamKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonlamKeyboardApp.swift; sourceTree = "<group>"; };
 		AF8FF7262C903A7F0023BACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		AF8FF7232C903A7F0023BACA /* MonlamKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				AF6B5DE02CC8D045005FD889 /* Info.plist */,
 				AF8FF7242C903A7F0023BACA /* MonlamKeyboardApp.swift */,
 				AF8FF7262C903A7F0023BACA /* ContentView.swift */,
 				AF8FF7282C903A810023BACA /* Assets.xcassets */,
@@ -225,6 +228,7 @@
 			knownRegions = (
 				en,
 				Base,
+				bo,
 			);
 			mainGroup = AF8FF7182C903A7F0023BACA;
 			packageReferences = (
@@ -246,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6B5DE12CC9039F005FD889 /* MonlamTBslim.ttf in Resources */,
 				AF8FF72C2C903A810023BACA /* Preview Assets.xcassets in Resources */,
 				AF8FF7292C903A810023BACA /* Assets.xcassets in Resources */,
 			);
@@ -333,6 +338,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -353,6 +359,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -397,6 +404,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -411,6 +419,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -427,12 +436,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"MonlamKeyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = R523566J54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Monlam Keyboard";
+				INFOPLIST_FILE = MonlamKeyboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,12 +467,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"MonlamKeyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = R523566J54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Monlam Keyboard";
+				INFOPLIST_FILE = MonlamKeyboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -487,7 +496,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = R523566J54;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TibetanKB/Info.plist;
@@ -516,7 +525,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = R523566J54;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TibetanKB/Info.plist;

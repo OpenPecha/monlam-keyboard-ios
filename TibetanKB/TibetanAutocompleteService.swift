@@ -11,10 +11,10 @@ class TibetanAutocompleteService: AutocompleteService {
     private var initialized = false
     init(context: AutocompleteContext) {
         self.context = context
-        symSpell = SymSpell(maxDictionaryEditDistance: 2)
-        DispatchQueue.global(qos: .userInitiated).async {
+        symSpell = SymSpell(prefixLength: 5)
+        Task {
             if let url = Bundle.main.url(forResource: "dictionary", withExtension: "txt") {
-                try? self.symSpell.loadDictionary(from: url, termCount: 27000)
+                try? await self.symSpell.loadDictionary(from: url, termCount: 72840)
                 self.initialized = true
             }
         }
@@ -41,7 +41,7 @@ class TibetanAutocompleteService: AutocompleteService {
         guard initialized, text.count > 0 else { return [] }
         var suggestions = Array(symSpell.complete(text).prefix(3))
         if suggestions.count < 3 {
-            suggestions += symSpell.lookup(text, verbosity: .closest, maxEditDistance: 2)
+            suggestions += symSpell.lookup(text, verbosity: .closest)
         }
 
         suggestions = Array(Set(suggestions))
