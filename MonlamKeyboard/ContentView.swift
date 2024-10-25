@@ -50,7 +50,7 @@ struct ContentView: View {
             .font(.custom("MonlamTBslim", size: 14))
             .controlSize(.large)
             .buttonStyle(.borderedProminent)
-            Spacer()
+            .padding()
         }
         .padding()
     }

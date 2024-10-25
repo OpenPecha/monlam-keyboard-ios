@@ -72,4 +72,8 @@ class TibetanKeyboardStyleProvider: KeyboardStyle.StandardProvider {
     override var actionCalloutStyle: Callouts.ActionCalloutStyle {
         .init(font: KeyboardFont(.custom(fontName, size: 18)), maxButtonSize: .init(width: 50, height: 50))
     }
+    
+    override var autocompleteToolbarStyle: Autocomplete.ToolbarStyle {
+        .init(item: .init(titleFont: KeyboardFont(.custom(fontName, size: 18))))
+    }
 }

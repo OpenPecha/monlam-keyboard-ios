@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AF8FF7202C903A7F0023BACA"
-               BuildableName = "MonlamKeyboard.app"
-               BlueprintName = "MonlamKeyboard"
+               BuildableName = "Monlam Keyboard.app"
+               BlueprintName = "Monlam Keyboard"
                ReferencedContainer = "container:MonlamKeyboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF8FF7202C903A7F0023BACA"
-            BuildableName = "MonlamKeyboard.app"
-            BlueprintName = "MonlamKeyboard"
+            BuildableName = "Monlam Keyboard.app"
+            BlueprintName = "Monlam Keyboard"
             ReferencedContainer = "container:MonlamKeyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF8FF7202C903A7F0023BACA"
-            BuildableName = "MonlamKeyboard.app"
-            BlueprintName = "MonlamKeyboard"
+            BuildableName = "Monlam Keyboard.app"
+            BlueprintName = "Monlam Keyboard"
             ReferencedContainer = "container:MonlamKeyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

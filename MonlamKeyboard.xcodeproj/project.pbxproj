@@ -56,7 +56,7 @@
 		AF6B5DD52CC3D77B005FD889 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 		AF6B5DDB2CC750E2005FD889 /* MonlamTBslim.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonlamTBslim.ttf; sourceTree = "<group>"; };
 		AF6B5DE02CC8D045005FD889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		AF8FF7212C903A7F0023BACA /* MonlamKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonlamKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8FF7212C903A7F0023BACA /* Monlam Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monlam Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8FF7242C903A7F0023BACA /* MonlamKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonlamKeyboardApp.swift; sourceTree = "<group>"; };
 		AF8FF7262C903A7F0023BACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF8FF7282C903A810023BACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		AF8FF7222C903A7F0023BACA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF8FF7212C903A7F0023BACA /* MonlamKeyboard.app */,
+				AF8FF7212C903A7F0023BACA /* Monlam Keyboard.app */,
 				AF8FF7362C903ACA0023BACA /* TibetanKB.appex */,
 			);
 			name = Products;
@@ -162,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF8FF7202C903A7F0023BACA /* MonlamKeyboard */ = {
+		AF8FF7202C903A7F0023BACA /* Monlam Keyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF8FF72F2C903A810023BACA /* Build configuration list for PBXNativeTarget "MonlamKeyboard" */;
+			buildConfigurationList = AF8FF72F2C903A810023BACA /* Build configuration list for PBXNativeTarget "Monlam Keyboard" */;
 			buildPhases = (
 				AF8FF71D2C903A7F0023BACA /* Sources */,
 				AF8FF71E2C903A7F0023BACA /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				AF8FF73C2C903ACA0023BACA /* PBXTargetDependency */,
 			);
-			name = MonlamKeyboard;
+			name = "Monlam Keyboard";
 			productName = MonlamKeyboard;
-			productReference = AF8FF7212C903A7F0023BACA /* MonlamKeyboard.app */;
+			productReference = AF8FF7212C903A7F0023BACA /* Monlam Keyboard.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AF8FF7352C903ACA0023BACA /* TibetanKB */ = {
@@ -239,7 +239,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF8FF7202C903A7F0023BACA /* MonlamKeyboard */,
+				AF8FF7202C903A7F0023BACA /* Monlam Keyboard */,
 				AF8FF7352C903ACA0023BACA /* TibetanKB */,
 			);
 		};
@@ -436,7 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"MonlamKeyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = R523566J54;
 				ENABLE_PREVIEWS = YES;
@@ -454,9 +454,12 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.monlam.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,7 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"MonlamKeyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = R523566J54;
 				ENABLE_PREVIEWS = YES;
@@ -485,9 +488,12 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.monlam.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -496,7 +502,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = R523566J54;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TibetanKB/Info.plist;
@@ -512,11 +518,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.monlam.keyboard.kb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -525,7 +534,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = R523566J54;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TibetanKB/Info.plist;
@@ -541,10 +550,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.monlam.keyboard.kb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -560,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF8FF72F2C903A810023BACA /* Build configuration list for PBXNativeTarget "MonlamKeyboard" */ = {
+		AF8FF72F2C903A810023BACA /* Build configuration list for PBXNativeTarget "Monlam Keyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF8FF7302C903A810023BACA /* Debug */,
