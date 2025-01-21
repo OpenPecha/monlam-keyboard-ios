@@ -28,6 +28,11 @@ class TibetanCustomActionHandler: KeyboardAction.StandardHandler {
         let consonantStart: UInt32 = 0x0F40
         let consonantEnd: UInt32 = 0x0F6A
         let subjoinedConsonantStart: UInt32 = 0x0F90
+        
+        //handle special case for འ
+        if char == "\u{0F60}" {
+            return "\u{0F71}"
+        }
 
         if let scalar = char.unicodeScalars.first, scalar.value >= consonantStart, scalar.value <= consonantEnd {
             let newScalarValue = subjoinedConsonantStart + (scalar.value - consonantStart)
